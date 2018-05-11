@@ -6,7 +6,7 @@
   "scripts": {
     "build:dev": "webpack --config ./build/webpack.dev.js",
     "build:prod": "webpack --config ./build/webpack.prod.js",
-    "watch": "webpack-dev-server --config ./build/webpack.dev.js"
+    "start": "webpack-dev-server --config ./build/webpack.dev.js"
   },
   "author": "Mitchell Keenan",
   "license": "MIT",

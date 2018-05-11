@@ -1,16 +1,31 @@
+<!-- This is a template file used by the HtmlWebpackPlugin. -->
 <!DOCTYPE html>
 <html>
   <head>
 		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 		<meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>WASM Starter</title>
+		<title>WASM Starter</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				width: 60%;
+				margin-top: 100px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
   </head>
   <body>
 		<h1>WASM Starter</h1>
 		
-		<div id="message-box"></div>
-		<br>
+		<p id="message-box">Roll the dice!</p>
+
 		<button id="roll-button">Roll</button>
+
+		<br>
+		<br>
+		<label for="sides">Dice Sides</label>
+		<input type="number" name="sides" id="sides"/>
 
 		<!-- Bundle will be injected here. -->
   </body>

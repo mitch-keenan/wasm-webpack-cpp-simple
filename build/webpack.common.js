@@ -1,5 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
+const homeDir = require("homedir");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -20,8 +21,14 @@ module.exports = {
           loader: "cpp-wasm-loader",
           options: {
             publicPath: "../dist/",
-            emccPath: "emcc",
-            emccFlags: ["-O3"]
+            emccPath: path.join(
+              homeDir(),
+              "emsdk",
+              "emscripten",
+              "incoming",
+              "emcc"
+            ),
+            emccFlags: ["-O3", "-std=c++11", "--bind"]
           }
         }
       }

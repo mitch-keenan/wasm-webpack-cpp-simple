@@ -2,7 +2,7 @@
 
 ## What this is for
 
-**This starter is great if you have a few functions or a class you want to bring from c/c++ into js.** It uses [cpp-wasm-loader](https://github.com/Kobzol/cpp-wasm-loader) to load our c code in js, which works great for a few files/classes, but it does not support the linking of multiple files together, which rules out a lot of functionality. It supports **hot reload for c/c++ files**, which my other starter does not. **If you need to load more c/c++, check out my other starter:** [wasm-webpack-cpp](https://github.com/konamacona/wasm-webpack-cpp-simple)
+**This starter is great if you have a few functions or a class you want to bring from c/c++ into js.** It uses [cpp-wasm-loader](https://github.com/Kobzol/cpp-wasm-loader) to load our c code in js, which works great for a few files/classes, but it does not support the linking of multiple files together, which rules out a lot of functionality. It supports **hot reload for c/c++ files**, which my other starter does not.
 
 ## Getting Started
 
